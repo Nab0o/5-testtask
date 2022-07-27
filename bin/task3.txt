@@ -1,0 +1,4 @@
+SELECT
+COUNT(promocodes.promocode_id) / COUNT(orders.order_id) 
+FROM orders
+LEFT JOIN PROMOCODES ON promocodes.promocode_id = orders.promocode_id;
